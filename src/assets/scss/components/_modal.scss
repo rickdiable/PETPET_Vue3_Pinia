@@ -1,0 +1,33 @@
+.modal-img {
+  width: 100px;
+  height: 100px;
+  @include media-breakpoint-up(md) {
+    width: 150px;
+    height: 150px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 282px;
+    height: 282px;
+  }
+}
+
+.modal-btn-group {
+  @include media-breakpoint-up(lg) {
+    width: 284px;
+  }
+}
+
+.modal-adopt-img-height{
+  height: 300px;
+  @include media-breakpoint-up(sm){
+    height: 60vh;
+  }
+}
+
+.modal-adopt-img-container{
+  padding: 8px 8px;
+  height: 320px;
+  @include media-breakpoint-up(sm){
+    height: 50vh;
+  }
+}
