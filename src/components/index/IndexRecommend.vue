@@ -88,8 +88,8 @@ export default {
     return {
       cards: [
         {
-          image: '/assets/images/index-2.jpeg',
-          personImage: '/assets/images/person-1.png',
+          image: 'assets/images/index-2.jpeg',
+          personImage: 'assets/images/person-1.png',
           personName: 'Jamie',
           services: '寄宿、美容、寵物行為訓練',
           link: '#',
@@ -97,8 +97,8 @@ export default {
           completedOrders: 580,
         },
         {
-          image: '/assets/images/index-3.jpeg',
-          personImage: '/assets/images/person-2.png',
+          image: 'assets/images/index-3.jpeg',
+          personImage: 'assets/images/person-2.png',
           personName: 'Eric',
           services: '寄宿、美容',
           link: '#',
@@ -106,8 +106,8 @@ export default {
           completedOrders: 208,
         },
         {
-          image: '/assets/images/index-4.jpeg',
-          personImage: '/assets/images/person-3.png',
+          image: 'assets/images/index-4.jpeg',
+          personImage: 'assets/images/person-3.png',
           personName: 'Yvonne',
           services: '寄宿、美容、寵物行為訓練',
           link: '#',
@@ -115,8 +115,8 @@ export default {
           completedOrders: 196,
         },
         {
-          image: '/assets/images/index-2.jpeg',
-          personImage: '/assets/images/person-1.png',
+          image: 'assets/images/index-2.jpeg',
+          personImage: 'assets/images/person-1.png',
           personName: 'Jamie',
           services: '寄宿、美容、寵物行為訓練',
           link: '#',
@@ -124,8 +124,8 @@ export default {
           completedOrders: 580,
         },
         {
-          image: '/assets/images/index-3.jpeg',
-          personImage: '/assets/images/person-2.png',
+          image: 'assets/images/index-3.jpeg',
+          personImage: 'assets/images/person-2.png',
           personName: 'Eric',
           services: '寄宿、美容',
           link: '#',
@@ -133,8 +133,8 @@ export default {
           completedOrders: 208,
         },
         {
-          image: '/assets/images/index-4.jpeg',
-          personImage: '/assets/images/person-3.png',
+          image: 'assets/images/index-4.jpeg',
+          personImage: 'assets/images/person-3.png',
           personName: 'Yvonne',
           services: '寄宿、美容、寵物行為訓練',
           link: '#',

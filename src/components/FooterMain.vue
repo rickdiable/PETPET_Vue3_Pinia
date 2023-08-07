@@ -35,7 +35,7 @@
       <div class="row mb-0 mb-md-14">
         <div class="col-md-3">
           <a href="index.html" class="mb-0 mb-md-6">
-            <img src="../assets/images/logo.svg" width="122" height="55" alt="PETPET" />
+            <img src="~@/assets/images/logo.svg" width="122" height="55" alt="PETPET" />
           </a>
           <ul class="d-none d-md-block">
             <li class="mb-6"><a href="#">關於我們</a></li>

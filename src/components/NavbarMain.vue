@@ -90,7 +90,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/scss/all.scss';
 .navbar-logo {
-  background: url('@/assets/images/logo.svg') no-repeat;
+  background: url('~@/assets/images/logo.svg') no-repeat;
   display: block;
   width: 122px;
   height: 55px;

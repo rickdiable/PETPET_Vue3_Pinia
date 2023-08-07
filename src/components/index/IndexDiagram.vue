@@ -1,7 +1,7 @@
 <template>
   <section
     class="text-white mb-11 mb-md-13 py-11 py-md-13"
-    style="background: url('/assets/images/index-9.jpeg') center center / cover"
+    style="background: url('./assets/images/index-9.jpeg') center center / cover"
   >
     <div class="container">
       <h3 class="font-4xl text-center text-md-left">PETPET目前已有</h3>

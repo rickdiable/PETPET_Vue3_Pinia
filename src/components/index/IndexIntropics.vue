@@ -8,7 +8,7 @@
           <a href="#" class="card text-white">
             <div
               class="card-img custom-card-img-overlay"
-              style="background: url('/assets/images/index-5.jpeg') center center / cover"
+              style="background: url('./assets/images/index-5.jpeg') center center / cover"
             ></div>
             <div class="card-img-overlay d-flex justify-content-center align-items-center">
               <h5 class="font-l">寵物寄宿</h5>
@@ -19,7 +19,7 @@
           <a href="#" class="card text-white">
             <div
               class="card-img custom-card-img-overlay"
-              style="background: url('/assets/images/index-6.jpeg') 70% center / cover"
+              style="background: url('./assets/images/index-6.jpeg') 70% center / cover"
             ></div>
             <div class="card-img-overlay d-flex justify-content-center align-items-center">
               <h5 class="font-l">寵物美容</h5>
@@ -32,7 +32,7 @@
               <a href="#" class="card text-white">
                 <div
                   class="card-img custom-card-img-overlay-sm"
-                  style="background: url('/assets/images/index-7.jpeg') center center / cover"
+                  style="background: url('./assets/images/index-7.jpeg') center center / cover"
                 ></div>
                 <div class="card-img-overlay d-flex justify-content-center align-items-center">
                   <h5 class="font-l">到府照顧</h5>
@@ -43,7 +43,7 @@
               <a href="#" class="card text-white">
                 <div
                   class="card-img custom-card-img-overlay-sm"
-                  style="background: url('/assets/images/index-8.jpeg') center center / cover"
+                  style="background: url('./assets/images/index-8.jpeg') center center / cover"
                 ></div>
                 <div class="card-img-overlay d-flex justify-content-center align-items-center">
                   <h5 class="font-l">遛狗保母</h5>
@@ -56,7 +56,7 @@
           <a href="#" class="card text-white">
             <div
               class="card-img custom-card-img-overlay"
-              style="background: url('/assets/images/index-3.jpeg') center center / cover"
+              style="background: url('./assets/images/index-3.jpeg') center center / cover"
             ></div>
             <div class="card-img-overlay d-flex justify-content-center align-items-center">
               <h5 class="font-l">行為訓練</h5>

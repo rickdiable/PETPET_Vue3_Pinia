@@ -28,12 +28,12 @@
 export default {
   data() {
     return {
-      currentImagePath: '/assets/images/homestay-3.jpeg',
+      currentImagePath: 'assets/images/homestay-3.jpeg',
       pictures: [
-        { path: '/assets/images/homestay-3.jpeg', alt: 'homestay-3' },
-        { path: '/assets/images/index-5.jpeg', alt: 'index-5' },
-        { path: '/assets/images/detail-1.jpeg', alt: 'index-1' },
-        { path: '/assets/images/detail-2.jpeg', alt: 'index-2' },
+        { path: 'assets/images/homestay-3.jpeg', alt: 'homestay-3' },
+        { path: 'assets/images/index-5.jpeg', alt: 'index-5' },
+        { path: 'assets/images/detail-1.jpeg', alt: 'index-1' },
+        { path: 'assets/images/detail-2.jpeg', alt: 'index-2' },
       ],
     };
   },

@@ -41,37 +41,37 @@ export default {
       stores: [
         {
           name: '寵屋屋',
-          imgUrl: '/assets/images/homestay-2.jpeg',
+          imgUrl: 'assets/images/homestay-2.jpeg',
           rating: 4,
           services: '寄宿、美容洗澡、到府保姆',
         },
         {
           name: '毛孩好家',
-          imgUrl: '/assets/images/homestay-6.jpeg',
+          imgUrl: 'assets/images/homestay-6.jpeg',
           rating: 5,
           services: '寄宿、美容洗澡、到府保姆',
         },
         {
           name: '妖貓X僕SS',
-          imgUrl: '/assets/images/homestay-4.jpeg',
+          imgUrl: 'assets/images/homestay-4.jpeg',
           rating: 5,
           services: '寄宿、美容洗澡',
         },
         {
           name: '貓是主我是僕',
-          imgUrl: '/assets/images/homestay-5.jpeg',
+          imgUrl: 'assets/images/homestay-5.jpeg',
           rating: 5,
           services: '寄宿、美容洗澡、到府保姆',
         },
         {
           name: '汪汪隊',
-          imgUrl: '/assets/images/homestay-6.jpeg',
+          imgUrl: 'assets/images/homestay-6.jpeg',
           rating: 5,
           services: '寄宿、到府保姆、寵物行為訓練',
         },
         {
           name: '卯咪',
-          imgUrl: '/assets/images/homestay-7.jpeg',
+          imgUrl: 'assets/images/homestay-7.jpeg',
           rating: 4,
           services: '寄宿、寵物行為訓練',
         },
