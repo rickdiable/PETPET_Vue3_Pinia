@@ -270,5 +270,14 @@ export default defineStore('adoptStore', {
       usePaginationStore.renderPagination(this.filteredData.length > 0 ? this.filteredData : this.adoptData);
       this.renderData();
     },
+    getDataByClick() {
+      usePaginationStore.NOW_PAGE += 1;
+      if(this.filteredData.length){
+        this.pageData = this.filteredData.slice(0, usePaginationStore.NOW_PAGE * usePaginationStore.CARDS_PER_PAGE);
+      } else {
+        this.pageData = this.adoptData.slice(0, usePaginationStore.NOW_PAGE * usePaginationStore.CARDS_PER_PAGE);
+      }
+      usePaginationStore.renderPagination(this.filteredData.length > 0 ? this.filteredData : this.adoptData);
+    },
   },
 });

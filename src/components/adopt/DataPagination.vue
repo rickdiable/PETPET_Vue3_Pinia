@@ -26,12 +26,15 @@
     </div>
   </nav>
   <!-- 手機版按鈕 -->
-  <nav class="d-block d-md-none mt-4">
+  <nav class="d-block d-md-none mt-4" v-if="this.NOW_PAGE < this.totalPage">
     <div class="bg-white d-flex justify-content-end align-items-center">
-      <a href="#" class="btn-detail-modal btn btn-warning btn-watch-more"
+      <a href="#" class="btn-detail-modal btn btn-warning btn-watch-more" @click.prevent="getDataByClick"
         >點我看更多</a
       >
     </div>
+  </nav>
+  <nav class="d-block d-md-none mt-4" v-else>
+    <p>已經顯示完所有毛孩囉!</p>
   </nav>
 </template>
 
@@ -52,7 +55,7 @@ export default {
     ...mapState(adoptStore, ['pageData']),
   },
   methods: {
-    ...mapActions(adoptStore, ['renderPage', 'renderNextPage', 'renderPrePage']),
+    ...mapActions(adoptStore, ['renderPage', 'renderNextPage', 'renderPrePage', 'getDataByClick']),
     scrollToElement() {
       // 使用 $refs 獲取元件的參考
       const elementRef = this.$parent.$refs.searchBar;

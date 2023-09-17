@@ -5,8 +5,8 @@
     <p v-if="filteredData.length !== 0" id="totalNum">當前檢索共有 {{ filteredData.length }} 個毛孩</p>
     <p v-else id="totalNum">當前檢索共有 {{ adoptData.length }} 個毛孩</p>
     <div class="d-flex" id="display-mode-container">
-      <p>每頁顯示筆數:</p>
-      <label for="a" class="ml-3 mr-10 d-flex">
+      <p class="d-md-flex d-none">每頁顯示筆數:</p>
+      <label for="a" class="ml-3 mr-10 d-md-flex d-none">
         <select class="form-control form-control-sm" v-model="selectedOption"
         @change="changePerPage(this.selectedOption)">
           <option>4</option>

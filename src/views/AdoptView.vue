@@ -8,7 +8,7 @@
     <DataPagination></DataPagination>
   </div>
 
-  <a href="#" class="arrow-up position-fixed d-none">
+  <a href="#" class="arrow-up position-fixed" v-show="showButton" @click.prevent="scrollToElement">
     <div class="arrow-up-icon bg-warning">
       <span class="link-arrow-icon material-icons">keyboard_double_arrow_up</span>
     </div>
@@ -34,15 +34,33 @@ export default {
     DataPanel,
     DataPagination,
   },
+  data() {
+    return {
+      showButton: false,
+    };
+  },
   // computed: {
   //   ...mapState(adoptStore, ['adoptData', 'getUserName', 'INDEX_URL']),
   // },
-  // methods: {
-  //   ...mapActions(adoptStore, ['getProducts', 'fetchData']),
-  // },
-  // mounted() {
-  //   console.log(this.INDEX_URL);
-  //   this.fetchData(this.INDEX_URL);
-  // },
+  methods: {
+    scrollToElement() {
+      // 使用 $refs 獲取元件的參考
+      const elementRef = this.$refs.searchBar;
+      if (elementRef) {
+        elementRef.$el.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+    handleScroll() {
+      const scrollTop = window.scrollY;
+      // 根據滾動高度決定隱藏與否
+      this.showButton = scrollTop > 800;
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
 };
 </script>
