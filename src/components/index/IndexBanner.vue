@@ -77,7 +77,7 @@ export default {
     scrollToNextElement() {
       // 使用 $refs 獲取下一個元件的參考
       const nextElementRef = this.$parent.$refs.indexRecommend; // 這裡假設 indexRecommend 是下一個元件
-
+      console.log(nextElementRef);
       if (nextElementRef) {
         // 滾動到下一個元件的頂部
         nextElementRef.$el.scrollIntoView({ behavior: 'smooth' });

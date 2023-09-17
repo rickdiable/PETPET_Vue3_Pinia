@@ -2,15 +2,23 @@ import { createApp } from 'vue';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { createPinia } from 'pinia';
+import axios from 'axios';
+import VueAxios from 'vue-axios';
+import Loading from 'vue3-loading-overlay';
+import 'vue3-loading-overlay/dist/vue3-loading-overlay.css';
 
 import App from './App.vue';
 import router from './router';
 
 import '@/assets/scss/all.scss';
 
+const pinia = createPinia();
 const app = createApp(App);
 
 app.use(router);
+app.use(pinia);
+app.use(VueAxios, axios);
 app.use(
   AOS.init({
     // Global settings:
@@ -32,4 +40,6 @@ app.use(
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   }),
 );
+app.component('LoadingOverlay', Loading);
+
 app.mount('#app');

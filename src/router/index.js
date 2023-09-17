@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
+// import adoptStore from '@/stores/adoptStore';
 import IndexView from '../views/IndexView.vue';
 
 const routes = [
@@ -16,6 +17,13 @@ const routes = [
     path: '/adopt',
     name: 'adopt',
     component: () => import('../views/AdoptView.vue'),
+    // router guard fetch
+    // async beforeEnter() {
+    //   await adoptStore().fetchData();
+    // },
+    meta: {
+      title: 'PETPET | 領養毛孩',
+    },
   },
   {
     path: '/login',
@@ -40,6 +48,15 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = to.meta.title;
+  } else {
+    document.title = 'PETPET | 毛孩好家';
+  }
+  next();
 });
 
 export default router;
