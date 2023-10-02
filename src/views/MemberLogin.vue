@@ -29,13 +29,13 @@
               <li class="col-md-6 mb-3 mb-lg-0">
                 <a href="#" class="btn btn-outline-light text-dark d-flex justify-content-center
                 align-items-center py-1">
-                  <img src="/assets/images/facebook.svg" alt="facebook">facebook
+                  <img src="@/assets/images/facebook.svg" alt="facebook">facebook
                 </a>
               </li>
               <li class="col-md-6 mb-3 mb-lg-0">
                 <a href="#" class="btn btn-outline-light text-dark d-flex justify-content-center
                 align-items-center py-1">
-                  <img src="/assets/images/google.svg" alt="google">google
+                  <img src="@/assets/images/google.svg" alt="google">google
                 </a>
               </li>
             </ul>

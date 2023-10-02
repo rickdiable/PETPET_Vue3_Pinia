@@ -67,7 +67,7 @@ export default defineStore('adoptStore', {
         const url = this.MODAL_URL + id;
         const response = await axios.get(url);
         this.modalData = this.formatData(response.data.Data);
-        console.log(this.modalData);
+        // console.log(this.modalData);
       } catch (error) {
         console.error(error);
       }

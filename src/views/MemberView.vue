@@ -9,7 +9,7 @@
           </a>
         </div>
         <div class="d-flex align-items-center mb-9">
-          <img src="/assets/images/person-4.png" class="custom-avatar-size mr-4"
+          <img src="@/assets/images/person-4.png" class="custom-avatar-size mr-4"
           alt="member avatar">
           <h3 class="font-m">Joanne</h3>
         </div>
