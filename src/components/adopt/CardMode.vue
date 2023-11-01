@@ -3,7 +3,7 @@
   <ul id="displayCard" class="row card-group mb--3 mb-md--5 mb-lg--8 vld-parent">
   <LoadingOverlay :active="isLoading" :is-full-page="fullPage"></LoadingOverlay>
     <li
-      class="card-group-item col-mobile-12 col-sm-6 col-md-4 col-lg-3 mb-10 hvr-bob"
+      class="card-group-item col-12 col-sm-6 col-md-4 col-lg-3 mb-10 hvr-bob"
       v-for="card in pageData"
       :key="card.animal_id"
     >
