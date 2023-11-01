@@ -31,18 +31,7 @@ export default defineStore('adoptStore', {
       shelter_name: '- 收容所 -',
       animal_id: '',
     },
-    // INDEX_URL: `${this.BASE_URL}/api/v1/AnimalRecognition/`,
-    // MODAL_URL: `${this.INDEX_URL}?animal_id=`,
   }),
-  // getters: {
-  //   INDEX_URL(state) {
-  //     // return `${state.BASE_URL}/api/v1/AnimalRecognition/?shelter_name=新北市八里區公立動物之家`;
-  //     return `${state.BASE_URL}/api/v1/AnimalRecognition/`;
-  //   },
-  //   MODAL_URL(getters) {
-  //     return `${getters.INDEX_URL}?animal_id=`;
-  //   },
-  // },
   actions: {
     // 打 API 取得數據面板資料
     async fetchData() {

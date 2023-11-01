@@ -1,6 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top"
-  :class="{ 'shadow-sm': isScrolled }">
+  <nav
+    class="navbar navbar-expand-md navbar-light bg-white sticky-top"
+    :class="{ 'shadow-sm': isScrolled }"
+  >
     <div class="container-fluid container-md">
       <h1>
         <router-link to="/" class="navbar-logo">PETPET</router-link>
@@ -19,27 +21,61 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <router-link to="/adopt" class="nav-link">領養毛孩</router-link>
+            <router-link
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              to="/adopt"
+              class="nav-link"
+              >領養毛孩</router-link
+            >
           </li>
           <li class="nav-item">
-            <router-link to="/detail" class="nav-link">預約服務</router-link>
+            <router-link
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              to="/detail"
+              class="nav-link"
+              >預約服務</router-link
+            >
           </li>
           <li class="nav-item">
-            <router-link v-if="!isMemberPage" to="/memberlogin" class="nav-link">成為寵物保姆
+            <router-link
+              v-if="!isMemberPage"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              to="/memberlogin"
+              class="nav-link"
+              >成為寵物保姆
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link v-if="!isMemberPage" to="/login" class="nav-link">登入</router-link>
+            <router-link
+              v-if="!isMemberPage"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              to="/login"
+              class="nav-link"
+              >登入</router-link
+            >
           </li>
 
           <li v-if="isMemberPage" class="nav-item">
             <div class="dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-              data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 Hi, Joanne
               </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="dropdownMenuLink"
+              >
                 <a class="dropdown-item" href="#">會員資料</a>
                 <a class="dropdown-item" href="#">預約查詢</a>
                 <a class="dropdown-item" href="#">歷史預約</a>
@@ -49,7 +85,6 @@
               </div>
             </div>
           </li>
-
         </ul>
       </div>
     </div>

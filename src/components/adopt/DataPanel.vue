@@ -26,7 +26,7 @@ export default {
   methods: {
     ...mapActions(adoptStore, ['fetchData']),
   },
-  mounted() {
+  created() {
     this.fetchData();
   },
 };
